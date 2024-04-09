@@ -1,0 +1,24 @@
+/test/demo/property/core/src/main/java/io/github/mmm/property/factory/PropertyFactoryManager.java:[88,48] error: incompatible types: inference variable P#1 has incompatible bounds
+equality constraints: P#2
+lower bounds: WritableProperty<V#1>,ReadableProperty<V#1>
+where P#1,V#1,P#2,V#2 are type-variables:
+P#1 extends ReadableProperty<V#1> declared in method <V#1,P#1>getRequiredFactory(Class<P#1>,Class<V#1>)
+V#1 extends Object declared in method <V#1,P#1>getRequiredFactory(Class<P#1>,Class<V#1>)
+P#2 extends ReadableProperty<V#2> declared in method <V#2,P#2>create(Class<P#2>,Class<V#2>,String,PropertyMetadata<V#2>)
+V#2 extends Object declared in method <V#2,P#2>create(Class<P#2>,Class<V#2>,String,PropertyMetadata<V#2>)
+/test/demo/property/core/src/main/java/io/github/mmm/property/factory/PropertyFactoryManager.java:[118,48] error: incompatible types: inference variable P#1 has incompatible bounds
+equality constraints: P#2
+lower bounds: WritableProperty<V#1>,ReadableProperty<V#1>
+where P#1,V#1,P#2,V#2 are type-variables:
+P#1 extends ReadableProperty<V#1> declared in method <V#1,P#1>getRequiredFactory(Class<P#1>,Class<V#1>)
+V#1 extends Object declared in method <V#1,P#1>getRequiredFactory(Class<P#1>,Class<V#1>)
+P#2 extends ReadableProperty<V#2> declared in method <V#2,P#2>create(Class<P#2>,PropertyTypeInfo<V#2>,String,PropertyMetadata<V#2>)
+V#2 extends Object declared in method <V#2,P#2>create(Class<P#2>,PropertyTypeInfo<V#2>,String,PropertyMetadata<V#2>)
+/test/demo/property/core/src/main/java/io/github/mmm/property/factory/PropertyFactoryManager.java:[159,41] error: incompatible types: inference variable P#1 has incompatible bounds
+equality constraints: P#2
+lower bounds: WritableProperty<V#1>,ReadableProperty<V#1>
+where P#1,V#1,P#2,V#2 are type-variables:
+P#1 extends ReadableProperty<V#1> declared in method <V#1,P#1>getFactoryForPropertyType(Class<P#1>)
+V#1 extends Object declared in method <V#1,P#1>getFactoryForPropertyType(Class<P#1>)
+P#2 extends ReadableProperty<V#2> declared in method <V#2,P#2>getFactory(Class<P#2>,Class<V#2>)
+V#2 extends Object declared in method <V#2,P#2>getFactory(Class<P#2>,Class<V#2>)
