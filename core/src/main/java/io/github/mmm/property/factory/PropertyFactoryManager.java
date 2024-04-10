@@ -86,7 +86,8 @@ public interface PropertyFactoryManager {
 
     // Open/Oracle JDK compiler has so many bugs in handling of generics... https://github.com/m-m-m/util/issues/166
     PropertyFactory factory = getRequiredFactory(propertyType, valueClass);
-    if (factory instanceof AbstractSimplePropertyFactory simpleFactory) {
+    if (factory instanceof AbstractSimplePropertyFactory) {
+      AbstractSimplePropertyFactory simpleFactory = ((AbstractSimplePropertyFactory) factory);
       // avoid creating PropertyTypeInfo if not used...
       return (P) simpleFactory.create(name, metadata);
     } else {
